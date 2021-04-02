@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Field Service",
+    'name': "Field Service Ruku",
     'summary': "Schedule and track onsite operations, time and material",
     'description': """""",
     'category': 'Services/Field Service',
