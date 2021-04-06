@@ -74,3 +74,64 @@ msgstr "Reihenfolge"
 #: model:ir.model,name:industry_fsm_extend.model_project_task
 msgid "Task"
 msgstr "Aufgabe"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__wood_type
+msgid "Wood Type"
+msgstr "Holzart"
+
+#. module: industry_fsm_extend
+#: model_terms:ir.ui.view,arch_db:industry_fsm_extend.wizard_create_task_form
+msgid "or"
+msgstr "oder"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__size
+msgid "Size"
+msgstr "Größe"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__date_installation
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_wizard_create_task__date_installation
+msgid "Date of installation"
+msgstr "Montage"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_wizard_create_task__user_id
+msgid "Assigned To"
+msgstr "Zugewiesen an"
+
+#. module: industry_fsm_extend
+#: model:ir.actions.act_window,name:industry_fsm_extend.wizard_create_task_action
+msgid "Assigned task"
+msgstr "Zugewiesene Aufgabe"
+
+#. module: industry_fsm_extend
+#: model_terms:ir.ui.view,arch_db:industry_fsm_extend.wizard_create_task_form
+msgid "Cancel"
+msgstr "Aufheben"
+
+#. module: industry_fsm_extend
+#: model_terms:ir.ui.view,arch_db:industry_fsm_extend.wizard_create_task_form
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__acronym_type_logistics_service
+msgid "Acronym for type of logistics service"
+msgstr "Z/M/A"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_wizard_create_task__name
+msgid "Name"
+msgstr "Name"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__number_cost_center
+msgid "Number of cost center"
+msgstr "Kst."
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_project__related_project_id
+msgid "Related Project"
+msgstr "Verwandte Projekte"

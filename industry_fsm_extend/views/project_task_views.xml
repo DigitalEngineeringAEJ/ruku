@@ -2,12 +2,22 @@
 <odoo>
 
     <!-- Make invoice button and quotation button invisible if not approved -->
-    <record id="view_task_form2_inherit_industry_fsm_extend" model="ir.ui.view">
-        <field name="name">view.task.form2.inherit</field>
-        <field name="model">project.task</field>
-        <field name="inherit_id" ref="industry_fsm_sale.view_task_form2_inherit"/>
-        <field name="arch" type="xml">
-           <xpath expr="//button[@name='action_create_invoice'][hasclass('btn-primary')]" position="attributes">
+    <!--<record id="view_task_form2_inherit" model="ir.ui.view">-->
+        <!--<field name="name">view.task.form2.inherit</field>-->
+        <!--<field name="model">project.task</field>-->
+        <!--<field name="inherit_id" ref="industry_fsm_sale.view_task_form2_inherit"/>-->
+        <!--<field name="arch" type="xml">-->
+           <!---->
+        <!--</field>-->
+    <!--</record>-->
+
+      <!-- Make buttons if not approved -->
+     <record id="view_task_form2_inherit" model="ir.ui.view">
+            <field name="name">view.task.form2.inherit</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="industry_fsm.view_task_form2_inherit"/>
+             <field name="arch" type="xml">
+                 <xpath expr="//button[@name='action_create_invoice'][hasclass('btn-primary')]" position="attributes">
                <attribute name="attrs">{'invisible': ['|', ('display_create_invoice_primary', '=', False), ('is_approved', '=', False)]} </attribute>
            </xpath>
           <xpath expr="//button[@name='action_create_invoice'][hasclass('btn-secondary')]" position="attributes">
@@ -16,14 +26,6 @@
             <xpath expr="//button[@name='action_fsm_create_quotation'][hasclass('btn-secondary')]" position="attributes">
                <attribute name="attrs">{'invisible': ['|', ('allow_quotations', '=', False), ('is_approved', '=', False)]} </attribute>
            </xpath>
-        </field>
-    </record>
-      <!-- Make buttons if not approved -->
-     <record id="view_task_form2_inherit_view_task_form2_inherit_extend" model="ir.ui.view">
-            <field name="name">view.task.form2.inherit</field>
-            <field name="model">project.task</field>
-            <field name="inherit_id" ref="industry_fsm_report.view_task_form2_inherit"/>
-             <field name="arch" type="xml">
                   <button name="action_timer_start" position="attributes">
                       <attribute name="attrs">{'invisible': ['|', '|',('display_timer_start_primary', '=', False), ('encode_uom_in_days', '=', True), ('is_approved', '=', False)]} </attribute>
                   </button>
@@ -57,7 +59,15 @@
                  <xpath expr="//button[@name='action_send_report'][hasclass('btn-secondary')]" position="attributes">
                       <attribute name="attrs">{'invisible': ['|', ('display_send_report_secondary', '=', False), ('is_approved', '=', False)]} </attribute>
                   </xpath>
-
+                  <field name="partner_id" position="after">
+                      <field name="number_cost_center"/>
+                      <field name="date_installation"/>
+                      <field name="acronym_type_logistics_service"/>
+                  </field>
+                  <field name="tag_ids" position="after">
+                      <field name="size"/>
+                      <field name="wood_type"/>
+                  </field>
                  <header position="inside">
                       <button class="btn-primary" name="action_approve" attrs="{'invisible':['|', '|', ('is_rejected', '=', True), ('is_approved', '=', True), ('sequence', '!=', 1)]}" type="object" string="Approve"/>
                       <button class="btn-primary btn-danger" name="action_rejected" attrs="{'invisible':['|', '|', ('is_rejected', '=', True), ('is_approved', '=', True), ('sequence', '!=', 1)]}" type="object" string="Reject"/>
@@ -69,6 +79,8 @@
                       <widget name="web_ribbon" title="Rejected" bg_color="bg-danger" attrs="{'invisible': [('is_rejected', '=', False)]}"/>
                       <widget name="web_ribbon" title="Approved" bg_color="bg-success" attrs="{'invisible': [('is_approved', '=', False)]}"/>
                   </div>
+
+
              </field>
 
      </record>
