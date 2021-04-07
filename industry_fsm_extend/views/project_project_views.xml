@@ -7,7 +7,7 @@
             <field name="inherit_id" ref="project.edit_project"/>
              <field name="arch" type="xml">
                  <field name="partner_id" position="after">
-                   <field name="related_project_id" options="{'no_create':True, 'no_open':True}"/>
+                   <field name="related_project_id" domain="[('is_fsm', '=', True), ('id','!=', active_id)]" options="{'no_create':True, 'no_open':True}"/>
                  </field>
              </field>
      </record>
