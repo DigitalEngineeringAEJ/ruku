@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+     <record id="edit_project_inherit_industry_fsm_extend" model="ir.ui.view">
+            <field name="name">view.project.form.inherit</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project"/>
+             <field name="arch" type="xml">
+                 <field name="partner_id" position="after">
+                   <field name="related_project_id" options="{'no_create':True, 'no_open':True}"/>
+                 </field>
+             </field>
+     </record>
+</odoo>

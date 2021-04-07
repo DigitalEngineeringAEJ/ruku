@@ -1,0 +1,137 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* industry_fsm_extend
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-02 14:55+0000\n"
+"PO-Revision-Date: 2021-04-02 14:55+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: industry_fsm_extend
+#: model_terms:ir.ui.view,arch_db:industry_fsm_extend.view_task_form2_inherit_view_task_form2_inherit_extend
+msgid "Approve"
+msgstr "Genehmigen"
+
+#. module: industry_fsm_extend
+#: model_terms:ir.ui.view,arch_db:industry_fsm_extend.view_task_form2_inherit_view_task_form2_inherit_extend
+msgid "Approved"
+msgstr "Genehmigt "
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,help:industry_fsm_extend.field_project_task__sequence
+msgid "Gives the sequence order when displaying a list of tasks."
+msgstr "Die Reihenfolge der Liste der Aufgaben."
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__id
+msgid "ID"
+msgstr ""
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__is_approved
+msgid "Is approved"
+msgstr "Ist genehmigt "
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__is_rejected
+msgid "Is rejected"
+msgstr "Ist abgelehnt"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: industry_fsm_extend
+#: model_terms:ir.ui.view,arch_db:industry_fsm_extend.view_task_form2_inherit_view_task_form2_inherit_extend
+msgid "Reject"
+msgstr "Ablehnen"
+
+#. module: industry_fsm_extend
+#: model_terms:ir.ui.view,arch_db:industry_fsm_extend.view_task_form2_inherit_view_task_form2_inherit_extend
+msgid "Rejected"
+msgstr "Abgelehnt"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__sequence
+msgid "Sequence"
+msgstr "Reihenfolge"
+
+#. module: industry_fsm_extend
+#: model:ir.model,name:industry_fsm_extend.model_project_task
+msgid "Task"
+msgstr "Aufgabe"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__wood_type
+msgid "Wood Type"
+msgstr "Holzart"
+
+#. module: industry_fsm_extend
+#: model_terms:ir.ui.view,arch_db:industry_fsm_extend.wizard_create_task_form
+msgid "or"
+msgstr "oder"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__size
+msgid "Size"
+msgstr "Größe"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__date_installation
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_wizard_create_task__date_installation
+msgid "Date of installation"
+msgstr "Montage"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_wizard_create_task__user_id
+msgid "Assigned To"
+msgstr "Zugewiesen an"
+
+#. module: industry_fsm_extend
+#: model:ir.actions.act_window,name:industry_fsm_extend.wizard_create_task_action
+msgid "Assigned task"
+msgstr "Zugewiesene Aufgabe"
+
+#. module: industry_fsm_extend
+#: model_terms:ir.ui.view,arch_db:industry_fsm_extend.wizard_create_task_form
+msgid "Cancel"
+msgstr "Aufheben"
+
+#. module: industry_fsm_extend
+#: model_terms:ir.ui.view,arch_db:industry_fsm_extend.wizard_create_task_form
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__acronym_type_logistics_service
+msgid "Acronym for type of logistics service"
+msgstr "Z/M/A"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_wizard_create_task__name
+msgid "Name"
+msgstr "Name"
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_task__number_cost_center
+msgid "Number of cost center"
+msgstr "Kst."
+
+#. module: industry_fsm_extend
+#: model:ir.model.fields,field_description:industry_fsm_extend.field_project_project__related_project_id
+msgid "Related Project"
+msgstr "Verwandte Projekte"
