@@ -1,4 +1,4 @@
-from odoo import fields, models, _, api
+from odoo import fields, models
 
 
 class ProjectProject(models.Model):
