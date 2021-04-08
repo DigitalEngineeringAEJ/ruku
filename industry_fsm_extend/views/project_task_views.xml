@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <!-- Make invoice button and quotation button invisible if not approved -->
-    <!--<record id="view_task_form2_inherit" model="ir.ui.view">-->
-        <!--<field name="name">view.task.form2.inherit</field>-->
-        <!--<field name="model">project.task</field>-->
-        <!--<field name="inherit_id" ref="industry_fsm_sale.view_task_form2_inherit"/>-->
-        <!--<field name="arch" type="xml">-->
-           <!---->
-        <!--</field>-->
-    <!--</record>-->
-
       <!-- Make buttons if not approved -->
      <record id="view_task_form2_inherit" model="ir.ui.view">
             <field name="name">view.task.form2.inherit</field>
