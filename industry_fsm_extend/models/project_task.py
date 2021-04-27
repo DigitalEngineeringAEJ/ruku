@@ -78,3 +78,13 @@ class ProjectTask(models.Model):
                         raise ValidationError(
                                 _("User can only have one task at a time!")
                             )
+
+    @api.onchange('partner_id')
+    def _onchange_customer(self):
+        if self.partner_id:
+            name = self.partner_id.name
+            if self.partner_id.zip:
+                name += '/' + self.partner_id.zip
+            if self.partner_id.city:
+                name += '/' + self.partner_id.city
+            self.name = name
